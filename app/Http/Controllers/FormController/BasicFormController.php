@@ -8,7 +8,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
 class BasicFormController extends Controller
+
 {
+
     public function viewform(){
         return view('frontend.form.simpleform');
     }
