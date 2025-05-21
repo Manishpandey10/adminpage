@@ -10,6 +10,7 @@
                                 {{ session()->get('tableError') }}
                                 </span>
                             <h3 class="font-weight-bold">Welcome <strong>{{Auth::user()->username}}</strong> </h3>
+                            <h3 class="font-weight-bold"><strong>Conutry name : {{Auth::user()->country}}</strong> </h3>
                             <h6 class="font-weight-normal mb-0">
                                 All systems are running smoothly! You have
                                 <span class="text-primary">3 unread alerts!</span>

@@ -34,7 +34,6 @@
                 </div>
                 <h4>Hello! let's get started</h4>
                 <h6 class="font-weight-light">Sign in to continue.</h6>
-                <h6 class="font-weight-light">{{ session()->get('error') }}</h6>
                 <div>
                   <span class="text-success">
                     {{ session()->get('Success') }}
@@ -50,12 +49,12 @@
                   @csrf
                   <div class="form-group">
                     <input type="email" name="email" class="form-control form-control-lg" placeholder="Email" value="{{ old('email') }}">
+                    <span class="text-danger">
+                        @error('email')
+                        {{$message}}
+                        @enderror
+                    </span>
                   </div>
-                  <span class="text-danger">
-                      @error('email')
-                      {{$message}}
-                      @enderror
-                  </span>
                   <div class="form-group">
                     <input type="password" name="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
                     <span class="text-danger">

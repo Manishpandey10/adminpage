@@ -47,41 +47,53 @@
                                     <input type="text" class="form-control" name="username"
                                         id="exampleInputUsername1" placeholder="Username"
                                         value="{{ old('username') }}" />
-                                        <span class="text-danger">
-                                            @error('username')
-                                                {{ $message }}
-                                            @enderror
-                                        </span>
+                                    <span class="text-danger">
+                                        @error('username')
+                                            {{ $message }}
+                                        @enderror
+                                    </span>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Email address</label>
                                     <input type="email" class="form-control" name="email" id="exampleInputEmail1"
                                         placeholder="Email" value="{{ old('email') }}" />
-                                        <span class="text-danger">
-                                            @error('email')
-                                                {{ $message }}
-                                            @enderror
-                                        </span>
+                                    <span class="text-danger">
+                                        @error('email')
+                                            {{ $message }}
+                                        @enderror
+                                    </span>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Password</label>
                                     <input type="password" class="form-control" name="password"
                                         id="exampleInputPassword1" placeholder="Password" />
-                                        <span class="text-danger">
-                                            @error('password')
-                                                {{ $message }}
-                                            @enderror
-                                        </span>
+                                    <span class="text-danger">
+                                        @error('password')
+                                            {{ $message }}
+                                        @enderror
+                                    </span>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputConfirmPassword1">Confirm Password</label>
                                     <input type="password" class="form-control" id="exampleInputConfirmPassword1"
                                         name="password_confirmation" placeholder="Password" />
-                                        <span class="text-danger">
-                                            @error('password_confirmation')
-                                                {{ $message }}
-                                            @enderror
-                                        </span>
+                                    <span class="text-danger">
+                                        @error('password_confirmation')
+                                            {{ $message }}
+                                        @enderror
+                                    </span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect2">Choose your country</label>
+                                    <select class="form-select form-select-lg" name="country"
+                                        id="exampleFormControlSelect2">
+                                        <option>Country</option>
+                                        <option>India</option>
+                                        <option>United States of America</option>
+                                        <option>United Kingdom</option>
+                                        <option>Germany</option>
+                                        <option>Argentina</option>
+                                    </select>
                                 </div>
 
                                 <button type="submit" class="btn btn-primary me-2">Submit</button>
